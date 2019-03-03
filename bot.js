@@ -111,10 +111,13 @@ ${message.author} `).then(msgS => {
 client.on('ready' , async ready => {
  client.user.setActivity("You", {type:'WATCHING'});
 });
-
 client.on('message', message => {
-if(message.content.startsWith(prefix+ "try)) {
-message.channel.send("Ok Senpai , ")
-   }});
-
+    
+    if(message.content.startsWith(prefix + "ping")){
+        message.channel.send("Pinging").then(r => r.edit(`Ping: ${r.createdTimestamp - message.createdTimestamp}ms | Websocket: ${Math.round(client.ping)}ms`))
+    
+        
+    }
+    
+});
 client.login(process.env.token)
