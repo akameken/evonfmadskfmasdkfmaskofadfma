@@ -112,6 +112,9 @@ client.on('ready' , async ready => {
  client.user.setActivity("You", {type:'WATCHING'});
 });
 
-
+client.on('message', message => {
+if(message.content.startsWith(prefix+ "try)) {
+message.channel.send("Ok Senpai , ")
+   }});
 
 client.login(process.env.token)
