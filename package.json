@@ -2,10 +2,10 @@
   "name": "gboty",
   "version": "1.0.0",
   "description": "",
-  "main": "node index.js",
+  "main": "node bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node bot.js"
   },
   "engines": {
     "node": "8.0.0"
